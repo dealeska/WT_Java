@@ -10,9 +10,7 @@ public class Program3 {
         Section var = inputData();
         ArrayList<Float> argList = createArgumentList(var.getA(), var.getB(), var.getH());
         ArrayList<Double> valueList = createValueList(argList);
-        outputResult(argList, valueList);
-        //double result = calculate(var.getX(), var.getY());
-        //outputResult(result);                
+        outputResult(argList, valueList);               
     }
 
     private static Section inputData() {
