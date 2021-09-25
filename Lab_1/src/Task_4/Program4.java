@@ -7,7 +7,7 @@ public class Program4 {
     public static void main(String[] args) throws Exception {   
 
         int n = inputData();
-        int[] array = generateArray(n);  
+        int[] array = generateArray(n, 100);  
         outputArray(array);
         printPrimeNumbers(array);     
     }
@@ -34,13 +34,13 @@ public class Program4 {
         return in.nextInt();       
     }
 
-    private static int[] generateArray(int length) {
+    public static int[] generateArray(int length, int maxNum) {
 
         int[] array = new int[length];
         Random rand = new Random();
 
         for(int i = 0; i < length; i++) {
-            array[i] = rand.nextInt(10);
+            array[i] = rand.nextInt(maxNum);
         }    
 
         return array;
@@ -68,7 +68,7 @@ public class Program4 {
         System.out.println();                
     }
 
-    private static void outputArray(int[] array) {
+    public static void outputArray(int[] array) {
 
         System.out.println("Array: ");
 
